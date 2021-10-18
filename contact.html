@@ -4,29 +4,59 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Contact Us</title>
-    <link rel="stylesheet" href="style.css">
-    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+    <title>Forms in HTML5</title>
 </head>
-
 <body>
-    <!-- <ul>
-        <li>
-            <a href="overview8.html">Home</a>
-        </li>
-        <li>
-            <a href="about.html">AboutUs</a>
-        </li>
-        <li>
-            <a href="contact.html">ContactUs</a>
-        </li>
-        <li>
-            <a href="">Gallery</a>
-        </li>
-    </ul> -->
-    <i class="fa fa-ravelry" aria-hidden="true"></i>
-    <i class="fa fa-facebook" aria-hidden="true"></i>
-    <h3>Contact Page</h3>
-    <p>Lorem, ipsum dolor sit amet consectetur adipisicing elit. Similique cupiditate nobis inventore modi fugit deleniti quibusdam illum reprehenderit molestiae quidem?</p>
+    <fieldset>
+        <legend align="center">
+            <b>
+            SignUp Page
+        </b>
+        </legend>
+    <table align="center">
+        <form method="get">
+        <tr>
+          <td><label for="">Firstname</label></td>
+        <td><input type="text" placeholder="Enter your Firstname" required=""></td>
+        </tr>
+        <tr>
+            <td><label for="">Password</label></td>
+            <td><input type="password" placeholder="Enter your Password" required=""></td>
+        </tr>
+        <tr>
+            <td><label for="">DOB</label></td>
+            <td><input type="date" required=""></td>
+        </tr>
+        <tr>
+            <td><label for="">EmailId</label></td>
+            <td><input type="email" placeholder="Enter your email" required=""></td>
+        </tr>
+        <tr>
+        <td><label for="">Mobile Number</label></td>
+        <td><input type="text" placeholder="Enter MobileNumber" pattern="[0-9]{10}" required=""></td>
+        </tr>
+        <tr>
+            <td><label for="">Gender</label></td>
+            <td>
+                <input type="radio" name="n" id="">
+                <label for="">Male</label>
+                <input type="radio" name="n" id="">
+                <label for="">Female</label>
+            </td>
+           
+            
+           </tr>
+           <tr>
+               <td>
+                   <input type="checkbox" name="" id="">
+                   <label for="">Remember Me</label>
+               </td>
+           </tr>
+        <tr>
+            <td><input type="submit" value="Login"></td>
+        </tr>
+    </form>
+    </table>
+</fieldset>
 </body>
 </html>
